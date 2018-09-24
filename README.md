@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # mytodoapp
 
 ## Project setup
@@ -14,3 +15,6 @@ yarn run serve
 ```
 yarn run build
 ```
+=======
+# vuetodoapp
+>>>>>>> 49abb94a89b25adbf474744c76451a936bfdb6ad
