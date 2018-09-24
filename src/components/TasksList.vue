@@ -5,7 +5,7 @@
           <tr v-for="(task, index) in taskList"
               :key="index">
             <td class="task-name">{{ task.name }}</td>
-            <td class="task-action"><button class="waves-effect waves-light btn-small" v-if="!task.done" type="button" @click="toggleTasks(task)">Completar</button></td>
+            <td class="task-action"><button class="waves-effect waves-light btn-small" v-if="!task.done" type="button" @click="toggleTasks(task)">Complete</button></td>
           </tr>
         </tbody>
       </table>
