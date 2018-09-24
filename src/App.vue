@@ -1,18 +1,15 @@
 <template>
   <div>
-    <nav class="blue-grey lighten-1" role="navigation">
-      <div class="nav-wrapper container"><i class="material-icons logo">list_alt</i></a></div>
-    </nav>
     <div class="section no-pad-bot" id="index-banner">
       <div class="container">
-        <h3 class="header center teal-text">Another To-Do App</h3>
+        <h3 class="header center black-text">My To-Do App</h3>
         <form @submit.prevent="addTask">
           <div class="row center">
-            <h6 class="header col s12 light">What needs to be done?</h6>
+            <h6 class="header col s12 light">This is supposed to be a good title</h6>
           </div>
-          <input v-model="newTaskName" type="text" placeholder="Type a task">
+          <input v-model="newTaskName" type="text" placeholder="Add a new task  ">
         <div class="row center">
-          <button class="btn-small waves-effect waves-light teal" type="submit">Submit <i class="material-icons right">send</i></button>
+          <button class="btn-small waves-effect waves-light red" type="submit">Submit <i class="material-icons right">send</i></button>
         </div>
         </form>
       </div>
@@ -21,10 +18,10 @@
       <div class="section">
         <div class="row">
           <div class="col s12 m6">
-            <div class="card-panel blue-grey">
+            <div class="card-panel red">
               <span class="white-text">
                 <center><i class="material-icons">alarm</i></center>
-                <h5 class="center">Get these things done! </h5>
+                <h5 class="center">To-Do! </h5>
                 <tasks-list
                   :task-list="tasksPending"
                   @completar="toggleTasks"/>
@@ -33,10 +30,10 @@
           </div>
           <div class="col s12 m6">
             <div class="icon-block">
-              <div class="card-panel blue-grey">
+              <div class="card-panel green">
                 <span class="white-text">
                   <center><i class="material-icons">done_outline</i></center>
-                  <h5 class="center">Hooray! </h5>
+                  <h5 class="center">Done</h5>
                   <tasks-list
                     :task-list="tasksComplete"
                     @completar="toggleTasks"/>
